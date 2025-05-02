@@ -14,7 +14,7 @@ const reserve=function(nums,l,r,t){
 }
 var rotate = function(nums, k) {
    let n=nums.length;
-   if((k%n)===0) return;
+   if((k%=n)===0) return;
    reserve(nums,0,n-1);
    reserve(nums,0,k-1);
    reserve(nums,k,n-1);
