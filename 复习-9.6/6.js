@@ -16,7 +16,7 @@ var isValidBST = function(root,min=-Infinity,max=Infinity) {
         return true;
     }
 
-    if(root.val<min||root.val>max){
+    if(root.val<=min||root.val>=max){
         return false;
     }
 
